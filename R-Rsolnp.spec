@@ -4,13 +4,12 @@
 #
 Name     : R-Rsolnp
 Version  : 1.16
-Release  : 8
+Release  : 9
 URL      : https://cran.r-project.org/src/contrib/Rsolnp_1.16.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Rsolnp_1.16.tar.gz
 Summary  : General Non-Linear Optimization
 Group    : Development/Tools
 License  : GPL-2.0
-Requires: R-truncnorm
 BuildRequires : R-truncnorm
 BuildRequires : buildreq-R
 
@@ -25,10 +24,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552812120
+export SOURCE_DATE_EPOCH=1552954207
 
 %install
-export SOURCE_DATE_EPOCH=1552812120
+export SOURCE_DATE_EPOCH=1552954207
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
