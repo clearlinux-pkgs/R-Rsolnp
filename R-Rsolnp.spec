@@ -6,10 +6,10 @@
 # autospec commit: 65cf152
 #
 Name     : R-Rsolnp
-Version  : 2.0.0
-Release  : 44
-URL      : https://ftp.osuosl.org/pub/cran/src/contrib/Rsolnp_2.0.0.tar.gz
-Source0  : https://ftp.osuosl.org/pub/cran/src/contrib/Rsolnp_2.0.0.tar.gz
+Version  : 2.0.1
+Release  : 45
+URL      : https://ftp.osuosl.org/pub/cran/src/contrib/Rsolnp_2.0.1.tar.gz
+Source0  : https://ftp.osuosl.org/pub/cran/src/contrib/Rsolnp_2.0.1.tar.gz
 Summary  : General Non-Linear Optimization
 Group    : Development/Tools
 License  : GPL-2.0
@@ -55,10 +55,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1750453209
+export SOURCE_DATE_EPOCH=1751292513
 
 %install
-export SOURCE_DATE_EPOCH=1750453209
+export SOURCE_DATE_EPOCH=1751292513
 rm -rf %{buildroot}
 LANG=C.UTF-8
 CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -117,6 +117,9 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/Rsolnp/doc/introduction.R
 /usr/lib64/R/library/Rsolnp/doc/introduction.Rmd
 /usr/lib64/R/library/Rsolnp/doc/introduction.html
+/usr/lib64/R/library/Rsolnp/doc/test_suite.R
+/usr/lib64/R/library/Rsolnp/doc/test_suite.Rmd
+/usr/lib64/R/library/Rsolnp/doc/test_suite.html
 /usr/lib64/R/library/Rsolnp/help/AnIndex
 /usr/lib64/R/library/Rsolnp/help/Rsolnp.rdb
 /usr/lib64/R/library/Rsolnp/help/Rsolnp.rdx
